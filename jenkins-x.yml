@@ -7,9 +7,12 @@ pipelineConfig:
         stages:
           - name: Build
             steps:
+              - command: echo
+                args:
+                  - hello world
               - command: ls
                 args:
-                  - '-la'
+                  - -la
               - command: npm
                 args:
                   - install
