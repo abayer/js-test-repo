@@ -1,0 +1,16 @@
+pipelineConfig:
+  pipelines:
+    release:
+      pipeline:
+        agent:
+          image: nodejs
+        stages:
+          - name: Build
+            steps:
+              - command: ls
+                args:
+                  - ls -la
+              - command: npm
+                args:
+                  - install
+                    
