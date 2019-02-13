@@ -1,0 +1,19 @@
+Step: build-step-credential-initializer:
+
+{"level":"warn","ts":1550068760.500785,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/test\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1550068760.501531,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Step: build-step-git-source-workspace:
+
+{"level":"warn","ts":1550068763.1331685,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/test\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1550068763.4039013,"logger":"fallback-logger","caller":"git-init/main.go:92","msg":"Successfully cloned \"https://github.com/abayer/js-test-repo\" @ \"master\" in path \"/workspace/workspace\""}
+Step: build-step-place-tools:
+
+Step: build-step-step2:
+
+
+Step: build-step-step3:
+
+Step: build-step-artifact-copy-to-abayer-js-test-repo-master:
+
+{"level":"warn","ts":1550068860.9884794,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"fatal","ts":1550068862.5948904,"logger":"fallback-logger","caller":"gsutil/main.go:94","msg":"Error executing command \"gsutil cp -r /workspace/workspace /abayer-js-test-repo-master-2-jx-bucket/build/workspace\" ; error exit status 1; cmd_output CommandException: Destination URL must name a directory, bucket, or bucket\nsubdirectory for the multiple source form of the cp command.\n","stacktrace":"main.main\n\t/go/src/github.com/knative/build-pipeline/cmd/gsutil/main.go:94\nruntime.main\n\t/usr/local/go/src/runtime/proc.go:201"}
