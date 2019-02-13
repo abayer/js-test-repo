@@ -13,7 +13,7 @@ pipelineConfig:
               - command: ls
                 args:
                   - -la
-              - command: npm
-                args:
-                  - install
+#              - command: npm
+#                args:
+#                  - install
                     
