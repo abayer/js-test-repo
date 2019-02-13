@@ -13,6 +13,11 @@ pipelineConfig:
               - command: ls
                 args:
                   - -la
+          - name: Second
+            steps:
+              - command: echo
+                args:
+                  - hi everybody
 #              - command: npm
 #                args:
 #                  - install
