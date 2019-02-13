@@ -1,35 +1,15 @@
 Step: build-step-credential-initializer:
 
-{"level":"warn","ts":1550092398.453923,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/test\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1550092398.4543486,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Unable to retrieve container logs for docker://9d2722f6fb95bf6f6dd0a06bcd129a779224734997b26024e5f85ef9f3476c26
 Step: build-step-git-source-workspace:
 
-{"level":"warn","ts":1550092400.8973513,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/test\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1550092401.158456,"logger":"fallback-logger","caller":"git-init/main.go:92","msg":"Successfully cloned \"https://github.com/abayer/js-test-repo\" @ \"master\" in path \"/workspace/workspace\""}
+Unable to retrieve container logs for docker://643119ed1a8f0d7df7c6771c3958de519dd97ef9b8b938437a0d958182eeec5e
 Step: build-step-place-tools:
 
+Unable to retrieve container logs for docker://8bf44e8bf8f3d84c83a9790453192357fcaebd4c974fe676a9f595bcca52c305
 Step: build-step-step2:
 
-hello world
+Unable to retrieve container logs for docker://33ea1299729eed7ce44d3342ab26375fd277ae1170ac82130846dfd27a40f576
 Step: build-step-step3:
 
-total 316
-drwxr-xr-x 6 root root   4096 Feb 13 21:13 .
-drwxrwxrwx 3 root root   4096 Feb 13 21:13 ..
-drwxr-xr-x 4 root root   4096 Feb 13 21:13 charts
--rw-r--r-- 1 root root     93 Feb 13 21:13 Dockerfile
--rw-r--r-- 1 root root     43 Feb 13 21:13 .dockerignore
--rw-r--r-- 1 root root      9 Feb 13 21:13 .env
-drwxr-xr-x 8 root root   4096 Feb 13 21:13 .git
--rw-r--r-- 1 root root    285 Feb 13 21:13 .gitignore
--rw-r--r-- 1 root root    398 Feb 13 21:13 .helmignore
--rw-r--r-- 1 root root   1881 Feb 13 21:13 Jenkinsfile
--rw-r--r-- 1 root root    546 Feb 13 21:13 jenkins-x.yml
--rw-r--r-- 1 root root     40 Feb 13 21:13 OWNERS
--rw-r--r-- 1 root root     68 Feb 13 21:13 OWNERS_ALIASES
--rw-r--r-- 1 root root    352 Feb 13 21:13 package.json
-drwxr-xr-x 2 root root   4096 Feb 13 21:13 public
--rw-r--r-- 1 root root    307 Feb 13 21:13 README.md
--rw-r--r-- 1 root root    675 Feb 13 21:13 skaffold.yaml
-drwxr-xr-x 4 root root   4096 Feb 13 21:13 src
--rw-r--r-- 1 root root 249590 Feb 13 21:13 yarn.lock
+Unable to retrieve container logs for docker://c9e720856eea0a411a8a8d39eeaf62476098e66b7ad54f21697c767198bb1f14
