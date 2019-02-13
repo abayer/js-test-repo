@@ -1,15 +1,13 @@
 Step: build-step-credential-initializer:
 
-Unable to retrieve container logs for docker://9d2722f6fb95bf6f6dd0a06bcd129a779224734997b26024e5f85ef9f3476c26
+{"level":"warn","ts":1550092498.7702754,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/test\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1550092498.7706616,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
 Step: build-step-git-source-workspace:
 
-Unable to retrieve container logs for docker://643119ed1a8f0d7df7c6771c3958de519dd97ef9b8b938437a0d958182eeec5e
+{"level":"warn","ts":1550092500.0807524,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/test\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1550092500.947019,"logger":"fallback-logger","caller":"git-init/main.go:92","msg":"Successfully cloned \"https://github.com/abayer/js-test-repo\" @ \"master\" in path \"/workspace/workspace\""}
 Step: build-step-place-tools:
 
-Unable to retrieve container logs for docker://8bf44e8bf8f3d84c83a9790453192357fcaebd4c974fe676a9f595bcca52c305
 Step: build-step-step2:
 
-Unable to retrieve container logs for docker://33ea1299729eed7ce44d3342ab26375fd277ae1170ac82130846dfd27a40f576
-Step: build-step-step3:
-
-Unable to retrieve container logs for docker://c9e720856eea0a411a8a8d39eeaf62476098e66b7ad54f21697c767198bb1f14
+hi everybody
