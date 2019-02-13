@@ -1,15 +1,35 @@
 Step: build-step-credential-initializer:
 
-Unable to retrieve container logs for docker://9dabf378240417274881ac3b5a069a5e75b7fd6f2a3697370d82b8519bdd2f12
+{"level":"warn","ts":1550092398.453923,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/test\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1550092398.4543486,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
 Step: build-step-git-source-workspace:
 
-Unable to retrieve container logs for docker://68d15f109856ed31ec4039c9e31831561bd29fcce16ed30fe32b057f3b050e5b
+{"level":"warn","ts":1550092400.8973513,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/test\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1550092401.158456,"logger":"fallback-logger","caller":"git-init/main.go:92","msg":"Successfully cloned \"https://github.com/abayer/js-test-repo\" @ \"master\" in path \"/workspace/workspace\""}
 Step: build-step-place-tools:
 
-Unable to retrieve container logs for docker://64eac8c93580f96308980bcd1cebc4195b44829197a7c0296c8acd8dc7dfe321
 Step: build-step-step2:
 
-Unable to retrieve container logs for docker://06bf14eb52a6d21f6867c73ae5ed8228301d9b2911e5fc73f066d614dbf43938
+hello world
 Step: build-step-step3:
 
-Unable to retrieve container logs for docker://8496d05842420a52b9b0309639e2077d8d7d7dc85f048672b92e4eae224f732a
+total 316
+drwxr-xr-x 6 root root   4096 Feb 13 21:13 .
+drwxrwxrwx 3 root root   4096 Feb 13 21:13 ..
+drwxr-xr-x 4 root root   4096 Feb 13 21:13 charts
+-rw-r--r-- 1 root root     93 Feb 13 21:13 Dockerfile
+-rw-r--r-- 1 root root     43 Feb 13 21:13 .dockerignore
+-rw-r--r-- 1 root root      9 Feb 13 21:13 .env
+drwxr-xr-x 8 root root   4096 Feb 13 21:13 .git
+-rw-r--r-- 1 root root    285 Feb 13 21:13 .gitignore
+-rw-r--r-- 1 root root    398 Feb 13 21:13 .helmignore
+-rw-r--r-- 1 root root   1881 Feb 13 21:13 Jenkinsfile
+-rw-r--r-- 1 root root    546 Feb 13 21:13 jenkins-x.yml
+-rw-r--r-- 1 root root     40 Feb 13 21:13 OWNERS
+-rw-r--r-- 1 root root     68 Feb 13 21:13 OWNERS_ALIASES
+-rw-r--r-- 1 root root    352 Feb 13 21:13 package.json
+drwxr-xr-x 2 root root   4096 Feb 13 21:13 public
+-rw-r--r-- 1 root root    307 Feb 13 21:13 README.md
+-rw-r--r-- 1 root root    675 Feb 13 21:13 skaffold.yaml
+drwxr-xr-x 4 root root   4096 Feb 13 21:13 src
+-rw-r--r-- 1 root root 249590 Feb 13 21:13 yarn.lock
