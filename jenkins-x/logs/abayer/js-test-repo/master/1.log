@@ -1,13 +1,39 @@
 Step: build-step-credential-initializer:
 
-{"level":"warn","ts":1550092498.7702754,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/test\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1550092498.7706616,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+{"level":"warn","ts":1550259809.5452235,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/test\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1550259809.5457633,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
 Step: build-step-git-source-workspace:
 
-{"level":"warn","ts":1550092500.0807524,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/test\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1550092500.947019,"logger":"fallback-logger","caller":"git-init/main.go:92","msg":"Successfully cloned \"https://github.com/abayer/js-test-repo\" @ \"master\" in path \"/workspace/workspace\""}
+{"level":"warn","ts":1550259812.0109634,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/test\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1550259812.3276567,"logger":"fallback-logger","caller":"git-init/main.go:92","msg":"Successfully cloned \"https://github.com/abayer/js-test-repo\" @ \"master\" in path \"/workspace/workspace\""}
 Step: build-step-place-tools:
 
 Step: build-step-step2:
 
-hi everybody
+hello world
+Step: build-step-step3:
+
+total 316
+drwxr-xr-x 6 root root   4096 Feb 15 19:43 .
+drwxrwxrwx 3 root root   4096 Feb 15 19:43 ..
+drwxr-xr-x 4 root root   4096 Feb 15 19:43 charts
+-rw-r--r-- 1 root root     93 Feb 15 19:43 Dockerfile
+-rw-r--r-- 1 root root     43 Feb 15 19:43 .dockerignore
+-rw-r--r-- 1 root root      9 Feb 15 19:43 .env
+drwxr-xr-x 8 root root   4096 Feb 15 19:43 .git
+-rw-r--r-- 1 root root    285 Feb 15 19:43 .gitignore
+-rw-r--r-- 1 root root    398 Feb 15 19:43 .helmignore
+-rw-r--r-- 1 root root   1881 Feb 15 19:43 Jenkinsfile
+-rw-r--r-- 1 root root    546 Feb 15 19:43 jenkins-x.yml
+-rw-r--r-- 1 root root     40 Feb 15 19:43 OWNERS
+-rw-r--r-- 1 root root     68 Feb 15 19:43 OWNERS_ALIASES
+-rw-r--r-- 1 root root    352 Feb 15 19:43 package.json
+drwxr-xr-x 2 root root   4096 Feb 15 19:43 public
+-rw-r--r-- 1 root root    307 Feb 15 19:43 README.md
+-rw-r--r-- 1 root root    675 Feb 15 19:43 skaffold.yaml
+drwxr-xr-x 4 root root   4096 Feb 15 19:43 src
+-rw-r--r-- 1 root root 249590 Feb 15 19:43 yarn.lock
+Step: build-step-artifact-copy-to-abayer-js-test-repo-master:
+
+{"level":"warn","ts":1550259907.6304653,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"fatal","ts":1550259909.048902,"logger":"fallback-logger","caller":"gsutil/main.go:94","msg":"Error executing command \"gsutil cp -r /workspace/workspace /abayer-js-test-repo-master-1-jx-bucket/build/workspace\" ; error exit status 1; cmd_output CommandException: Destination URL must name a directory, bucket, or bucket\nsubdirectory for the multiple source form of the cp command.\n","stacktrace":"main.main\n\t/go/src/github.com/knative/build-pipeline/cmd/gsutil/main.go:94\nruntime.main\n\t/usr/local/go/src/runtime/proc.go:201"}
