@@ -5,19 +5,27 @@ pipelineConfig:
         agent:
           image: nodejs
         stages:
-          - name: Build
-            steps:
-              - command: echo
-                args:
-                  - hello world
-              - command: ls
-                args:
-                  - -la
-          - name: Second
-            steps:
-              - command: echo
-                args:
-                  - hi everybody
+          - name: Parent
+            stages:
+              - name: Build
+                steps:
+                  - command: echo
+                    args:
+                      - hello world
+                  - command: ls
+                    args:
+                      - -la
+                  - command: sleep
+                    args:
+                      - 30
+              - name: Second
+                steps:
+                  - command: echo
+                    args:
+                      - hi everybody
+                  - command: sleep
+                    args:
+                      - 30
 #              - command: npm
 #                args:
 #                  - install
