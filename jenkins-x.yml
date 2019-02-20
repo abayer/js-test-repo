@@ -17,7 +17,7 @@ pipelineConfig:
                       - -la
                   - command: sleep
                     args:
-                      - 30
+                      - 5
               - name: Second
                 steps:
                   - command: echo
@@ -25,7 +25,7 @@ pipelineConfig:
                       - hi everybody
                   - command: sleep
                     args:
-                      - 30
+                      - 5
 #              - command: npm
 #                args:
 #                  - install
