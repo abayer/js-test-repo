@@ -5,7 +5,7 @@ pipelineConfig:
         agent:
           image: nodejs
         stages:
-          - name: Build
+          - name: Build a whole lot of stuff in a really long name that goes way too long
             steps:
               - command: echo
                 args:
