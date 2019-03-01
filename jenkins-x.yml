@@ -1,5 +1,8 @@
 pipelineConfig:
   pipelines:
+    env:
+      - name: FRUIT
+        value: BANANA
     release:
       pipeline:
         agent:
@@ -17,5 +20,5 @@ pipelineConfig:
             steps:
               - command: echo
                 args:
-                  - hi everybody
+                  - hi ${FRUIT}
                     
