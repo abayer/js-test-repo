@@ -1,8 +1,8 @@
 pipelineConfig:
+  env:
+    - name: FRUIT
+      value: BANANA
   pipelines:
-    env:
-      - name: FRUIT
-        value: BANANA
     release:
       pipeline:
         agent:
