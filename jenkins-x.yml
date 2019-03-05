@@ -18,4 +18,6 @@ pipelineConfig:
               - command: echo
                 args:
                   - hi everybody
-                    
+              - command: sleep
+                args:
+                  - 30
