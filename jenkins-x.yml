@@ -4,6 +4,9 @@ pipelineConfig:
       pipeline:
         agent:
           image: nodejs
+        environment:
+          - name: SOME_VAR
+            value: something
         stages:
           - name: Build
             steps:
